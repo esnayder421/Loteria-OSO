@@ -32,10 +32,10 @@ route.get('/numero', async(req,res) => {
 
     console.log(datos)
 
-
+    //- se reinicia la data
     let numeroAleatorio = 0
     do {
-        let calculate = Math.floor(Math.random() * 150) + 1;
+        let calculate = Math.floor(Math.random() * 130) + 1;
         numeroAleatorio = calculate;
 
         if(datos.filter((item) => item.Numero == numeroAleatorio).length > 0){
